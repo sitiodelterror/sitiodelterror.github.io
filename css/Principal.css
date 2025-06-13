@@ -1,0 +1,105 @@
+.imagen-con-texto {
+    position: relative;
+    width: 100%;
+    max-height: 200px; 
+    overflow: hidden;
+}
+
+.imagen-con-texto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagen-con-texto h1 {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente para mayor contraste */
+    padding: 10px 20px;
+    font-size: 2.5em;
+    border-radius: 10px;
+}
+
+nav
+{
+    background-color:black;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    
+}
+
+nav a:hover
+{
+    color: red;
+}
+
+nav > ol {
+  position: absolute;
+  top: 100%; 
+  left: 0;    
+  background: black;
+  color: white;
+  padding: 10px;
+  display: none; 
+}
+
+nav > a[href="Historias"]:hover + ol
+ {
+  display: block; 
+ }
+
+nav > ol 
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav > ol li {
+  padding: 5px 10px;
+}
+
+
+.imagenf {
+    position: relative;
+    width: 100%;
+    max-height: 90px; 
+    overflow: hidden;
+}
+
+.imagenf img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagenf p {
+
+  color: rgb(232, 158, 158);
+  text-align: center;
+  font-family: 'Georgia', serif;
+  position: absolute;
+  top: 5px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mayor contraste */
+  padding: 5px 5px;
+  font-size: 1em;
+  border-radius: 10px;
+
+
+}

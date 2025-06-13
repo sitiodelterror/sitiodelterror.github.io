@@ -1,0 +1,47 @@
+body {
+  background-image: url('../Imag/FondoServicios.avif');
+  background-size:contain;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  color: white;
+}
+
+ul.servicios-esotericos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+}
+
+ul.servicios-esotericos li {
+    background: linear-gradient(90deg, #2c003e, #0d0d0d);
+    color: #f8e4ff;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-left: 6px solid #a200ff;
+    border-radius: 8px;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+ul.servicios-esotericos li::before {
+    content: "🕯️";
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+}
+
+ul.servicios-esotericos li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 12px rgba(162, 0, 255, 0.3);
+    border-left-color: #ff00dd;
+}
+
+
