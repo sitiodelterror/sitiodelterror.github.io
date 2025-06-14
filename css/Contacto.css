@@ -1,7 +1,8 @@
 body {
   background-image: url('../Imag/Contacto1.jpg');
-  background-size:cover;
+  background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   margin: 0;
   padding: 0;
   font-family: 'Georgia', serif;
@@ -76,4 +77,8 @@ body {
 
 #imagen-escalofriante img:hover {
     transform: scale(1.02);
+}
+
+textarea {
+  resize: none;
 }

@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-.imagen-con-texto img {
+.imagen-con-texto video {
     width: 100%;
     height: auto;
     display: block;
@@ -23,55 +23,71 @@
     border-radius: 10px;
 }
 
-nav
-{
-    background-color:black;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    
-}
-
-nav a
-{
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-family: Arial, sans-serif;
-    display: inline-block;
-    
-}
-
-nav a:hover
-{
-    color: red;
-}
-
-nav > ol {
-  position: absolute;
-  top: 100%; 
-  left: 0;    
-  background: black;
-  color: white;
+nav {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
   padding: 10px;
-  display: none; 
+  font-family: Arial, sans-serif;
 }
 
-nav > a[href="Historias"]:hover + ol
- {
-  display: block; 
- }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.2s ease;
+}
 
-nav > ol 
-{
+nav a:hover,
+nav li:hover {
+  color: red;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Justo debajo del enlace */
+  left: 0;
+  background-color: black;
+  padding: 10px 0;
+  list-style: none;
+  min-width: 180px;
+  color: white;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 5px 20px;
+  white-space: nowrap;
+}
+
+
+/* Mostrar el menú al hacer hover en el contenedor .dropdown */
+.dropdown:hover #menu {
+  display: block;
+}
+
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-nav > ol li {
+ul li {
   padding: 5px 10px;
 }
+
 
 
 .imagenf {
@@ -81,7 +97,7 @@ nav > ol li {
     overflow: hidden;
 }
 
-.imagenf img {
+.imagenf video {
     width: 100%;
     height: auto;
     display: block;

@@ -1,12 +1,50 @@
+/* Nuevo body con fondo limpio */
 body {
-  background-image: url('../Imag/DEMONIO1.jpg');
-  background-size: cover;
-  background-attachment: fixed;
   margin: 0;
   padding: 0;
   font-family: 'Georgia', serif;
   color: white;
+  position: relative;
 }
+
+/* Pseudoelemento que contiene solo el fondo animado */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Imag/DEMONIO1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+  animation: screamerEffect 10s infinite;
+}
+
+/* Animación del efecto screamer */
+@keyframes screamerEffect {
+  0%, 95% {
+    filter: none;
+  }
+  96% {
+    filter: invert(1) contrast(2) brightness(0.6) saturate(3) blur(3px);
+  }
+  97% {
+    filter: hue-rotate(180deg) contrast(3) brightness(0.3);
+  }
+  98% {
+    filter: invert(1) sepia(1) hue-rotate(360deg);
+  }
+  99% {
+    filter: grayscale(1) contrast(4);
+  }
+  100% {
+    filter: none;
+  }
+}
+
 
 .Historias2025 {
   display: flex;
@@ -68,6 +106,13 @@ body {
   max-width: 350px; 
   border-radius: 15px;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  text-shadow:
+    0 0 5px #ff0000,
+    0 0 10px #ff0000,
+    0 0 20px #ff0000
 }
 
 

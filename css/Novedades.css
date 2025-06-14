@@ -40,6 +40,33 @@ body
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease;
+    animation: glitch 3s infinite; /* Animacion para las imagenes */
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    filter: none;
+  }
+  20% {
+    transform: translate(-2px, 2px);
+    filter: hue-rotate(10deg);
+  }
+  40% {
+    transform: translate(2px, -2px);
+    filter: hue-rotate(-10deg);
+  }
+  60% {
+    transform: translate(-1px, 1px);
+    filter: contrast(150%);
+  }
+  80% {
+    transform: translate(1px, -1px);
+    filter: brightness(120%);
+  }
+  100% {
+    transform: translate(0);
+    filter: none;
+  }
 }
 
 .Novedades2025 .contenedor:hover .Encabezado img {
@@ -62,4 +89,30 @@ body
     line-height: 1.6;
     margin-bottom: 10px;
     color: #ddd;
+}
+
+/* Se crea nueva animacion para la segunda imagen*/
+.Parte2 .contenedor .Encabezado img {
+    animation: invert 5s infinite;
+}
+
+@keyframes invert {
+    0%, 95% {
+        filter: none;
+    }
+    96% {
+        filter: invert(1) contrast(2) brightness(0.6) saturate(3) blur(3px);
+    }
+    97% {
+        filter: hue-rotate(180deg) contrast(3) brightness(0.3);
+    }
+    98% {
+        filter: invert(1) sepia(1) hue-rotate(360deg);
+    }
+    99% {
+        filter: grayscale(1) contrast(4);
+    }
+    100% {
+        filter: none;
+    }
 }

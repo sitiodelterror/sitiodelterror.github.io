@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Sitios del Terror</title>
-        <link rel = "stylesheet" href="../css/Home.css"/>
+        <title> Sitio del Terror</title>
+        <link rel = "stylesheet" href="./css/Home.css"/>
         <link rel = "stylesheet" href="../css/Principal.css"/>
                     
     </head>
@@ -10,27 +10,27 @@
     <body>
         <header class="encabezado">
             <div class="imagen-con-texto">
-                <img src="../Imag/HOME1.gif" alt="Home"/>
+                <video src="./Imag/HOME1.mp4" autoplay loop muted></video> <!--Se agrego video mp4 comprimido-->
                 <h1>El portal de los misterios</h1>
-            </div>
+            </div>            
+            <nav> <!-- Se movio el nav dentro del header-->
+                <a href="../index.html">Inicio</a> 
+                <a href="../html/Novedades.html">Novedades</a>
+                <div class="dropdown"> <!-- se creo clase dropdown para contener el menú desplegable-->
+                    <a href="#">Historias</a>
+                        <ul class="dropdown-menu"> <!-- se creo clase para la lista desplegable-->
+                            <li>El Padre sin Cabeza</li>
+                            <li>La llorona</li>
+                            <li>El Cadejo</li>
+                            <li>La Carreta Nagua</li>
+                        </ul>
+                </div>
+                <a href="../html/Servicios.html">Servicios Espeluznantes</a>
+                <a href="../html/Contactos.html">Contacto al más allá</a>
+                </div> 
+            </nav>
         </header>
-
-        <nav> 
-            <a href="../index.html">Inicio</a> 
-            <a href="../html/Novedades.html">Novedades</a> 
-            <a href="Historias">Historias</a>
-                    <ol>
-                        <li>El Padre sin Cabeza</li>
-                        <li>La llorona</li>
-                        <li>El Cadejo</li>
-                        <li>La Carreta Nagua</li>
-                    </ol> 
-            <a href="../html/Servicios.html">Servicios Espeluznantes</a> 
-            <a href="../html/Contactos.html">Contacto al más allá</a> 
-        </nav>
-
         <section class="Historias2025">
-
             <div class="Parte1">
                 <div class="contenedor">
                     <div class="texto">
@@ -46,11 +46,8 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="Parte2">
                 <div class="contenedor">
-
                     <div class="imagen">
                         <img src="../Imag/Veronica.jpg" alt="Vero"/>
                     </div>
@@ -69,11 +66,8 @@
                         no queda claro según diversas fuentes, con un libro que por lo general suele ser la Biblia y unas tijeras 
                         abiertas, se aparece el fantasma de la joven detrás de ti y te mata. Espeluznante, sin duda.</p>
                     </div>
-
                 </div>
             </div>            
-
-
             <div class="Parte1">
                 <div class="contenedor">
                     <div class="texto">
@@ -106,23 +100,14 @@
                     </div>
                 </div>
             </div>
- 
         </section>
-
-
-
         <footer class="Footer">
-
             <div class="imagenf">
-                <img src="../Imag/HOME1.gif" alt="imagenf"/>
+                <video src="../Imag/HOME1.mp4" autoplay loop muted></video> <!--Se agrego video mp4 comprimido-->
                 <p> © 2025, Sitio del Terror
                     <br> SitiodelTerror@yahoo.com
                 </p>
             </div>
-
         </footer>
-        
-
-
     </body>
 </html>
