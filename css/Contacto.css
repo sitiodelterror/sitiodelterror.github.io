@@ -1,3 +1,4 @@
+/*Estilo general*/
 body {
   background-image: url('../Imag/Contacto1.jpg');
   background-size: cover;
@@ -9,6 +10,7 @@ body {
   color: white;
 }
 
+/* Contenedor principal del formulario */
 .formulario-oculto {
     background: radial-gradient(circle, #1c001c 0%, #0a0a0a 100%);
     padding: 40px;
@@ -20,7 +22,7 @@ body {
     text-align: center;
 }
 
-
+/*Estitulo de titulo en formulario*/
 .formulario-oculto h2 {
     font-size: 2rem;
     color: #ffccff;
@@ -28,12 +30,14 @@ body {
     margin-bottom: 10px;
 }
 
+/* Texto descriptivo del formulario */
 .formulario-oculto p {
     font-style: italic;
     color: #d8bff3;
     margin-bottom: 30px;
 }
 
+/*Estilo de los campos de entrada del formulario*/
 .formulario-oculto input[type="text"],
 .formulario-oculto textarea {
     width: 100%;
@@ -45,6 +49,7 @@ body {
     color: #f8e6ff;
 }
 
+/*Botones de accion del formulario*/
 .formulario-oculto input[type="button"],
 .formulario-oculto input[type="submit"],
 .formulario-oculto input[type="reset"] {
@@ -59,6 +64,7 @@ body {
     transition: all 0.3s ease;
 }
 
+/*Efecto hover de botones*/
 .formulario-oculto input[type="button"]:hover,
 .formulario-oculto input[type="submit"]:hover,
 .formulario-oculto input[type="reset"]:hover {
@@ -66,7 +72,7 @@ body {
     box-shadow: 0 0 10px #e699ff;
 }
 
-
+/*Estilo de imagen*/
 #imagen-escalofriante img {
     max-width: 100%;
     border: 4px solid #7a00a3;
@@ -75,10 +81,45 @@ body {
     transition: transform 0.4s ease;
 }
 
+/*efecto hover de imagen*/
 #imagen-escalofriante img:hover {
     transform: scale(1.02);
 }
 
 textarea {
-  resize: none;
+  resize: none}
+
+/* Diseño responsivo */
+@media screen and (max-width: 760px) {
+  
+  .formulario-oculto {
+    padding: 20px;
+    margin: 20px 15px;
+    max-width: 100%;
+    border-width: 1.5px;
+    box-shadow: 0 0 20px rgba(144, 0, 255, 0.3);
+  }
+
+  .formulario-oculto h2 {
+    font-size: 1.5rem;
+  }
+
+  .formulario-oculto p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+
+  .formulario-oculto input[type="text"],
+  .formulario-oculto textarea {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .formulario-oculto input[type="button"],
+  .formulario-oculto input[type="submit"],
+  .formulario-oculto input[type="reset"] {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    margin: 8px 3px;
+  }
 }

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista para dispositivos móviles -->
         <title> Sitio del Terror</title>
         <link rel = "stylesheet" href="../css/Principal.css"/>
         <link rel = "stylesheet" href="..//css/Contacto.css"/>
@@ -19,10 +21,10 @@
                 <div class="dropdown">
                     <a href="#">Historias</a>
                         <ul class="dropdown-menu">
-                            <li>El Padre sin Cabeza</li>
-                            <li>La llorona</li>
-                            <li>El Cadejo</li>
-                            <li>La Carreta Nagua</li>
+                            <li> <a href="../html/Historia1.html">El Padre sin Cabeza</li>
+                            <li><a href="../html/Construccion.html">La llorona</a></li>
+                            <li><a href="../html/Construccion.html">El Cadejo</a></li>
+                            <li><a href="../html/Construccion.html">La Carreta Nagua</a></li>
                         </ul>
                 </div>
                 <a href="../html/Servicios.html">Servicios Espeluznantes</a>
@@ -30,11 +32,13 @@
                 </div> 
             </nav>
         </header>
+        <!-- Sección de contacto -->
         <section class="formulario-oculto">
             <h2> Ritual de Comunicación</h2>
             <p>Escribe tu invocación. Los mensajes serán enviados a través del velo entre mundos...</p>
 
             <form action="registrodatos.php" method="post">
+                <!-- Campos del formulario para capturar datos del usuario -->
                 <label for="nombre">Nombre terrenal:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre..."><br>
 
@@ -46,7 +50,7 @@
 
                 <label for="mensaje">Mensaje al otro lado:</label><br>
                 <textarea name="mensaje" id="mensaje" rows="5" cols="60" placeholder="Describe lo que deseas..."></textarea><br>
-                
+                <!-- Botones para enviar, eliminar o invocar -->
                 <input type="reset" value="Eliminar de este mundo">
                 <input type="button" value="Invocar" onclick="mostrarImagen()">
 

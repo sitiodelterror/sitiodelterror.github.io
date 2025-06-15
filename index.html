@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Sitio del Terror</title>
-        <link rel = "stylesheet" href="./css/Home.css"/>
-        <link rel = "stylesheet" href="../css/Principal.css"/>
+        <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista para dispositivos móviles -->
+        <meta name="description" content="Bienvenido al Sitio del Terror, donde las leyendas cobran vida y los misterios te esperan. Explora historias escalofriantes y descubre el lado oscuro de la realidad."> <!-- Descripción del sitio web -->
+        <meta name="keywords" content="terror, leyendas, historias de miedo, misterio, paranormal"> <!-- Palabras clave para SEO -->
+        <title> Sitio del Terror</title> <!-- Titulo de la pestaña del navegador -->
+        <link rel = "stylesheet" href="./css/Home.css"/> <!-- Estilo de inicio -->
+        <link rel = "stylesheet" href="./css/Principal.css"/> <!-- Estilo general o principal-->
                     
     </head>
 
     <body>
-        <header class="encabezado">
-            <div class="imagen-con-texto">
+        <header class="encabezado"> <!-- Emcabezado de inicio con navegacion y video -->
+            <div class="imagen-con-texto"> <!-- Se creo una clase para contener el video y el texto -->
                 <video src="./Imag/HOME1.mp4" autoplay loop muted></video> <!--Se agrego video mp4 comprimido-->
-                <h1>El portal de los misterios</h1>
+                <h1>El portal de los misterios</h1><!-- Titulo de la pagina -->
             </div>            
             <nav> <!-- Se movio el nav dentro del header-->
-                <a href="../index.html">Inicio</a> 
-                <a href="../html/Novedades.html">Novedades</a>
+                <a href="./index.html">Inicio</a> 
+                <a href="./html/Novedades.html">Novedades</a>
                 <div class="dropdown"> <!-- se creo clase dropdown para contener el menú desplegable-->
                     <a href="#">Historias</a>
                         <ul class="dropdown-menu"> <!-- se creo clase para la lista desplegable-->
-                            <li>El Padre sin Cabeza</li>
-                            <li>La llorona</li>
-                            <li>El Cadejo</li>
-                            <li>La Carreta Nagua</li>
+                        <li><a href="./html/Historia1.html">El Padre sin Cabeza</a></li>
+                            <li><a href="./html/Construccion.html">La llorona</a></li>
+                            <li><a href="./html/Construccion.html">El Cadejo</a></li>
+                            <li><a href="./html/Construccion.html">La Carreta Nagua</a></li>
                         </ul>
                 </div>
-                <a href="../html/Servicios.html">Servicios Espeluznantes</a>
-                <a href="../html/Contactos.html">Contacto al más allá</a>
+                <a href="./html/Servicios.html">Servicios Espeluznantes</a>
+                <a href="./html/Contactos.html">Contacto al más allá</a>
                 </div> 
             </nav>
         </header>
+        <!--Seccion principal con historias de terror-->
         <section class="Historias2025">
             <div class="Parte1">
-                <div class="contenedor">
+                <div class="contenedor"><!--Contenedor para texto e imagen-->
                     <div class="texto">
                         <h2>La maldición de la estatua que llora</h2>
                         <p> En un apacible pueblo escondido entre colinas y campos silvestres, existe un antiguo monumento 
@@ -42,14 +47,14 @@
                         desmentir la leyenda, la maldición continúa acechando, tiñendo de temor las noches del vecindario.</p>
                     </div>
                     <div class="imagen">
-                        <img src="../Imag/Llora1.jpg" alt="Llorona"/>
+                        <img src="./Imag/Llora1.jpg" alt="Llorona"/>
                     </div>
                 </div>
             </div>
             <div class="Parte2">
                 <div class="contenedor">
                     <div class="imagen">
-                        <img src="../Imag/Veronica.jpg" alt="Vero"/>
+                        <img src="./Imag/Veronica.jpg" alt="Vero"/>
                     </div>
                     <div class="texto">
                         <h2>Verónica ante el espejo</h2>
@@ -96,14 +101,15 @@
 
                     </div>
                     <div class="imagen-Parte3">
-                        <img src="../Imag/Paralisis.jpg" alt="Sueño"/>
+                        <img src="./Imag/Paralisis.jpg" alt="Sueño"/>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Seccion de pie de pagina con video y texto -->
         <footer class="Footer">
             <div class="imagenf">
-                <video src="../Imag/HOME1.mp4" autoplay loop muted></video> <!--Se agrego video mp4 comprimido-->
+                <video src="./Imag/HOME1.mp4" autoplay loop muted></video> <!--Se agrego video mp4 comprimido-->
                 <p> © 2025, Sitio del Terror
                     <br> SitiodelTerror@yahoo.com
                 </p>

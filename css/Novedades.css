@@ -1,8 +1,10 @@
+/*Estilo general del fondo de la pagina*/
 body
 {
   background-color: black;
 }
 
+/*Contenedor principal de cada historia*/
 .Novedades2025 {
     background-color: #0d0d0d;
     padding: 50px 20px;
@@ -13,6 +15,7 @@ body
     color: #e6e6e6;
 }
 
+/*Estilo para el contenedor de cada historia*/
 .Novedades2025 .contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +29,7 @@ body
     transition: transform 0.3s ease;
 }
 
+/*Conteneddor de la imagen*/
 .Novedades2025 .Encabezado {
     flex: 1 1 300px;
     max-width: 400px;
@@ -33,6 +37,7 @@ body
     border-radius: 12px;
 }
 
+/*Estilos para las imagenes*/
 .Novedades2025 .Encabezado img {
     width: 100%;
     height: auto;
@@ -42,6 +47,8 @@ body
     transition: transform 0.3s ease;
     animation: glitch 3s infinite; /* Animacion para las imagenes */
 }
+
+/*Animacion glitch general para las imagenes*/
 @keyframes glitch {
   0% {
     transform: translate(0);
@@ -69,6 +76,7 @@ body
   }
 }
 
+/*Aumeta ligeramente el tamaño de la imagen con un evento hover*/
 .Novedades2025 .contenedor:hover .Encabezado img {
     transform: scale(1.05);
 }
@@ -96,6 +104,7 @@ body
     animation: invert 5s infinite;
 }
 
+/*animacion de tipo parpadeo*/
 @keyframes invert {
     0%, 95% {
         filter: none;
@@ -115,4 +124,41 @@ body
     100% {
         filter: none;
     }
+}
+
+/*Diseño responsivo*/
+@media (max-width: 760px) {
+  .Novedades2025 .contenedor {
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: flex-start;
+  }
+
+  .Novedades2025 .texto, 
+  .Novedades2025 .Encabezado {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .Novedades2025 {
+    padding: 20px 10px;
+  }
+
+  .Novedades2025 .texto h2 {
+    font-size: 1.5rem;
+  }
+
+  .Novedades2025 .texto p {
+    font-size: 0.95rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
 }
